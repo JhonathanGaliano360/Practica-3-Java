@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class main {
+
+    public static void main(String[] args {
+        Scanner sn = new Scanner(System.in);
+        int num = 0;
+
+        System.out.println("Dime un número correspondiente 
+        a los 
+        días de la semana:\nLunes = 1\nMartes = 2\nMiércoles = 
+        3\nJueves = 4\nViernes = 5\nSábado = 6\nDomingo = 7");
+        num = sn.nextInt();
+
+        if (num >= 1 && num <= 5) {
+           System.out.println("Es día laboral.");
+        } else if (num <= 7) {
+           System.out.println("Es fin de semana.");
+        } else {
+           System.out.println("Error");
+        }
+    }
+}
